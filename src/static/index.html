@@ -15,6 +15,19 @@
     <main>
       <section id="activities-container">
         <h3>Available Activities</h3>
+        <!-- Toolbar for filters, sort, and search -->
+        <div id="activities-toolbar" class="toolbar">
+          <input type="text" id="search-input" placeholder="Search activities..." />
+          <select id="sort-select">
+            <option value="name">Sort by Name</option>
+            <option value="spots">Sort by Availability</option>
+          </select>
+          <!-- Category filter placeholder, can be populated dynamically if categories are added -->
+          <select id="category-select">
+            <option value="">All Categories</option>
+            <!-- Category options will be loaded here if available -->
+          </select>
+        </div>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
